@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Online Food System</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fdf6f0;
+    }
+
+    header {
+      background-color: #ff6f61;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #ffb88c;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      background-image: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092');
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 2em;
+      font-weight: bold;
+      text-shadow: 2px 2px 4px #000;
+    }
+
+    .menu {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 40px 20px;
+      gap: 30px;
+    }
+
+    .dish {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 250px;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .dish img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .order-form {
+      background-color: #fff3e0;
+      padding: 30px;
+      max-width: 500px;
+      margin: 40px auto;
+      border-radius: 10px;
+    }
+
+    .order-form h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .order-form input, .order-form select {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .order-form button {
+      background-color: #ff6f61;
+      color: white;
+      border: none;
+      padding: 12px;
+      width: 100%;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    footer {
+      background-color: #ffb88c;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>DelishBite 🍕</h1>
+    <p>Your favorite meals delivered fast & fresh</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Menu</a>
+    <a href="#">Order</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <div class="hero">
+    Crave it. Click it. Eat it.
+  </div>
+
+  <section class="menu">
+    <div class="dish">
+      <img src="https://images.unsplash.com/photo-1604908177522-3f3b9e3c3c3e" alt="Pizza">
+      <h3>Margherita Pizza</h3>
+      <p>₹299</p>
+    </div>
+    <div class="dish">
+      <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092" alt="Burger">
+      <h3>Cheese Burger</h3>
+      <p>₹199</p>
+    </div>
+    <div class="dish">
+      <img src="https://images.unsplash.com/photo-1606755962773-0f3f3f3f3f3f" alt="Pasta">
+      <h3>Italian Pasta</h3>
+      <p>₹249</p>
+    </div>
+  </section>
+
+  <section class="order-form">
+    <h2>Place Your Order</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <select required>
+        <option value="">Select Dish</option>
+        <option>Margherita Pizza</option>
+        <option>Cheese Burger</option>
+        <option>Italian Pasta</option>
+      </select>
+      <input type="number" placeholder="Quantity" min="1" required />
+      <button type="submit">Order Now</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 DelishBite. All rights reserved.
+  </footer>
+
+</body>
+</html>
